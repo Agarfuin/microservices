@@ -1,0 +1,6 @@
+/Users/harun/Documents/Coding/Java/microservices/fraud/src/main/java/com/example/fraud/FraudApplication.java
+/Users/harun/Documents/Coding/Java/microservices/fraud/src/main/java/com/example/fraud/FraudCheckController.java
+/Users/harun/Documents/Coding/Java/microservices/fraud/src/main/java/com/example/fraud/FraudCheckService.java
+/Users/harun/Documents/Coding/Java/microservices/fraud/src/main/java/com/example/fraud/dto/FraudCheckResponseDto.java
+/Users/harun/Documents/Coding/Java/microservices/fraud/src/main/java/com/example/fraud/entity/FraudCheckEntity.java
+/Users/harun/Documents/Coding/Java/microservices/fraud/src/main/java/com/example/fraud/repository/FraudCheckRepository.java

@@ -1,0 +1,8 @@
+com/example/fraud/entity/FraudCheckEntity.class
+com/example/fraud/dto/FraudCheckResponseDto$FraudCheckResponseDtoBuilder.class
+com/example/fraud/repository/FraudCheckRepository.class
+com/example/fraud/FraudCheckService.class
+com/example/fraud/FraudCheckController.class
+com/example/fraud/dto/FraudCheckResponseDto.class
+com/example/fraud/FraudApplication.class
+com/example/fraud/entity/FraudCheckEntity$FraudCheckEntityBuilder.class

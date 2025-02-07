@@ -1,0 +1,6 @@
+com/example/clients/fraud/FraudCheckResponseDto.class
+com/example/clients/fraud/FraudCheckResponseDto$FraudCheckResponseDtoBuilder.class
+com/example/clients/notification/NotificationRequestDto$NotificationRequestDtoBuilder.class
+com/example/clients/fraud/FraudClient.class
+com/example/clients/notification/NotificationClient.class
+com/example/clients/notification/NotificationRequestDto.class
