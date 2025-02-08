@@ -9,6 +9,7 @@ import org.springframework.context.annotation.PropertySources;
     scanBasePackages = {
       "com.example.notification",
       "com.example.amqp",
+      "com.example.kafka",
     })
 @PropertySources({@PropertySource("classpath:clients-${spring.profiles.active}.properties")})
 public class NotificationApplication {

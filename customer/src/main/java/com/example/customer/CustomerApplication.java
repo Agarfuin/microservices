@@ -10,6 +10,7 @@ import org.springframework.context.annotation.PropertySources;
     scanBasePackages = {
       "com.example.customer",
       "com.example.amqp",
+      "com.example.kafka",
     })
 @EnableFeignClients(basePackages = "com.example.clients")
 @PropertySources({@PropertySource("classpath:clients-${spring.profiles.active}.properties")})

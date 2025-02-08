@@ -7,6 +7,7 @@ import com.example.clients.notification.NotificationRequestDto;
 import com.example.customer.entity.CustomerEntity;
 import com.example.customer.dto.CreateCustomerRequestDto;
 import com.example.customer.repository.CustomerRepository;
+import com.example.kafka.producer.KafkaProducer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,7 @@ public class CustomerService {
   private final CustomerRepository customerRepository;
   private final FraudClient fraudClient;
   private final RabbitMQMessageProducer rabbitMQMessageProducer;
+  private final KafkaProducer kafkaProducer;
 
   public void registerCustomer(CreateCustomerRequestDto createCustomerRequestDto) {
     CustomerEntity customerEntity =
@@ -45,7 +47,6 @@ public class CustomerService {
 
     rabbitMQMessageProducer.publish(
         notificationRequestDto, "internal.exchange", "internal.notification.routing-key");
-
-    // TODO: Validations...
+    kafkaProducer.sendMessage("example", notificationRequestDto);
   }
 }

@@ -42,6 +42,14 @@ services:
       - "15672:15672"
     networks:
       - spring
+  kafka:
+    image: apache/kafka:latest
+    container_name: broker
+    ports:
+      - "9092:9092"
+      - "29092:9092"
+    networks:
+      - spring
 networks:
   postgres:
     driver: bridge
